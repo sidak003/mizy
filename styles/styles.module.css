@@ -1,0 +1,280 @@
+.tabInactive {
+  position: relative;
+  display: inline-block;
+}
+.hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 10vw var(--start-point) 0 var(--start-point);
+}
+.bgPattern1 {
+  position: absolute;
+  top: -2.25rem;
+  left: -4.9rem;
+  width: 7.525rem;
+  height: 6rem;
+}
+.headline {
+  position: relative;
+  font-size: var(--h1);
+}
+.headlineAccent {
+  color: var(--primary);
+}
+.linePattern {
+  position: absolute;
+  top: 9.5rem;
+  left: 12.75rem;
+  width: 7rem;
+  height: .65rem;
+}
+.illustration {
+  position: absolute;
+  top: -2.3rem;
+  right: 0;
+  width: clamp(21rem, 30vw, 21.75rem);
+  height: clamp(21rem, 30vw, 21.75rem);
+  overflow: hidden;
+}
+.para {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.headPara {
+  position: relative;
+  margin-top: 2rem;
+  width: 27rem;
+  font-family: var(--noto);
+  color: var(--text-50);
+}
+.section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.75rem;
+  margin-left: var(--start-point);
+  margin-right: var(--start-point);
+  padding: 3.75rem 0;
+}
+.loc1 {
+  display: flex;
+  position: relative;
+  margin-top: 2.75rem;
+}
+.loc1Image {
+  border-radius: 30px;
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
+.section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 3.75rem var(--start-point) 0 var(--start-point);
+  padding: 3.75rem 0;
+}
+.howIzyPara,
+.loc1Name {
+  position: relative;
+  color: var(--text-75);
+}
+.loc1Name {
+  margin-left: 1.5rem;
+  font-size: var(--h5);
+  line-height: 2.19375rem;
+  font-weight: 500;
+}
+.howIzyPara {
+  margin-top: 1.5rem;
+  width: 32rem;
+  font-family: var(--noto);
+  text-align: justify;
+}
+.section3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.75rem;
+  margin-left: var(--start-point);
+  padding: 3.75rem 0;
+}
+.bgPattern2 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 21rem;
+  height: 23.25rem;
+}
+.trackOrderSearch {
+  position: relative;
+  margin-top: 2rem;
+  width: 25rem;
+  border-radius: var(--br-xs);
+  background-color: var(--background);
+  box-shadow: var(--drop-mini);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trackOrderSearch input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  border-radius: var(--br-xs);
+  padding: 1rem var(--padding-sm);
+  font-size: var(--base);
+  color: var(--text-75);
+  font-family: var(--noto);
+}
+.trackOrderButton {
+  position: relative;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-bottom-right-radius: var(--br-xs);
+  border-top-right-radius: var(--br-xs);
+  transition: .2s ease-in-out;
+}
+.trackOrderButton a {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.searchIconSmall {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #FFAD66;
+  overflow: hidden;
+}
+.trackOrderButton:hover {
+  background-color: var(--style);
+}
+.trackOrderResult {
+  position: relative;
+  font-family: var(--noto);
+  margin-top: 2rem;
+  color: var(--text-75);
+}
+.end {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.75rem;
+  padding-bottom: 3.75rem;
+}
+.endOfPage {
+  position: relative;
+  margin-top: .75rem;
+  font-size: var(--h5);
+  line-height: 2.19375rem;
+  font-weight: 500;
+  text-align: center;
+}
+.aboutAccent {
+  color: var(--primary);
+}
+.endLine {
+  position: relative;
+  margin-top: .375rem;
+  font-family: var(--noto);
+  text-align: center;
+  color: var(--text-75);
+}
+.heading1,
+.heading2,
+.heading3 {
+  position: relative;
+  font-size: var(--h3);
+}
+.locationDotIcon,
+.faceLaughIcon,
+.truckIcon {
+  position: absolute;
+  overflow: hidden;
+  color: var(--style);
+}
+.locationDotIcon {
+  top: 1.5rem;
+  left: -2rem;
+  width: 4rem;
+  height: 5.15rem;
+}
+.faceLaughIcon {
+  top: 1.25rem;
+  right: -3.25rem;
+  width: 5rem;
+  height: 5rem;
+  rotate: -12deg;
+}
+.truckIcon {
+  top: 1.75rem;
+  left: -2.75rem;
+  width: 5.25rem;
+  height: 4.25rem;
+}
+.window {
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .linePattern {
+    top: 14.5rem;
+  }
+  .headPara {
+    display: none;
+  }
+  .trackOrderSearch {
+    width: calc(100% - var(--start-point));
+  }
+  .trackOrderSearch input {
+    font-size: var(--h5);
+  }
+  .trackOrderButton {
+    padding: var(--padding-2xs) var(--padding-3xs);
+  }
+  .searchIconSmall {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media (max-width: 651px) {
+  .linePattern {
+    top: 14.5rem;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    padding: 3.5rem 0;
+  }
+  .end {
+    margin-top: 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headPara {
+    width: fit-content;
+  }
+  .howIzyPara {
+    width: fit-content;
+  }
+  .bgPattern2 {
+    display: none
+  }
+}
+
+@media (max-width: 1000px) {
+  .illustration {
+    display: none
+  }
+}

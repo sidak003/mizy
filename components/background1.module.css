@@ -1,0 +1,70 @@
+.rec1,
+.rec2,
+.rec3,
+.rec4,
+.rec5,
+.rec6,
+.rec7,
+.rec8 {
+  position: absolute;
+  background-color: var(--style);
+}
+
+.rec1 {
+  top: var(--bg-start);
+  left: 0;
+  width: 50vw;
+  height: 6rem;
+}
+.rec2 {
+  top: calc(var(--bg-start) + 6rem);
+  left: 0;
+  width: 13.33vw;
+  height: 24.35rem;
+}
+.rec3{
+  top: calc(var(--bg-start) + 26.6rem);
+  left: 0;
+  width: 100vw;
+  height: 3.75rem;
+}
+.rec4 {
+  top: calc(var(--bg-start) + 26.6rem);
+  right: 0;
+  width: 13.33vw;
+  height: 24.65rem;
+}
+.rec5 {
+  top: calc(var(--bg-start) + 47.5rem);
+  left: 0;
+  width: 100vw;
+  height: 3.75rem;
+}
+.rec6 {
+  top: calc(var(--bg-start) + 47.5rem);
+  left: 0;
+  width: 13.33vw;
+  height: 26.6rem;
+}
+.rec7 {
+  top: calc(var(--bg-start) + 70.35rem);
+  left: 0;
+  width: calc(49vw + 2.79rem);
+  height: 3.75rem;
+}
+.rec8 {
+  top: calc(var(--bg-start) + 70.35rem);
+  left: calc(49vw - 2.79rem);
+  width: 5.58rem;
+  height: 6.75rem;
+}
+
+
+
+@media (max-width: 480px) {
+  .rec2,
+  .rec4,
+  .rec6 {
+    width: 21vw;
+  }
+}
