@@ -9,10 +9,10 @@ export default function HomeLayout({ children }) {
                 <Image className={styles.bgPattern1} alt={''} src={'/group-6.svg'} width={1} height={1}/>
                 <p className={styles.illustration}>Copppyyywrite</p>
                 <Image className={styles.illustration} alt={''} src={'/phone-maintenanceamico-1.svg'} width={1} height={1}/>
-                <b className={styles.headline}>
+                <h1 className={styles.headline}>
                     Mobile Repairs<br/>Made
                     <span className={styles.headlineAccent}>{' izy'}</span>
-                </b>
+                </h1>
                 <Image className={styles.linePattern} alt={''} src={'/line-1.svg'} width={1} height={1} />
                 <div className={styles.headPara}>
                     <p className={styles.para}>

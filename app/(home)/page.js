@@ -13,7 +13,7 @@ export default function Home() {
       <Backgroud1 />
       <div className={styles.section1}>
         <FontAwesomeIcon className={styles.locationDotIcon} icon={faLocationDot}/>
-        <b className={styles.heading1}>Locations</b>
+        <h3 className={styles.heading1}>Locations</h3>
         <div className={styles.loc1}>
           <Image className={styles.loc1Image} alt={''} src='/pic3@2x.png' width={200} height={200} />
           <div className={styles.loc1Name}>
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <div className={styles.section2}>
         <FontAwesomeIcon className={styles.faceLaughIcon} icon={faFaceLaughBeam} />
-        <b className={styles.heading2}>How izy?</b>
+        <h3 className={styles.heading2}>How izy?</h3>
         <div className={styles.howIzyPara}>
           <p className={styles.para}>
             Just place a Service Request with us, will collect your Device as soon as we
@@ -36,7 +36,7 @@ export default function Home() {
       <div className={styles.section3} id={'trackOrder'}>
         <Image className={styles.bgPattern2} alt={''} src={'/group-7.svg'} width={1} height={1} />
         <FontAwesomeIcon className={styles.truckIcon} icon={faTruck}/>
-        <b className={styles.heading3}>Track Order</b>
+        <h3 className={styles.heading3}>Track Order</h3>
         <div className={styles.trackOrderSearch}>
           <input type={'number'} min={0} max={9999999999} placeholder={'Enter your order number'}></input>
           <div className={styles.trackOrderButton}>

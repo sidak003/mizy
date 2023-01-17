@@ -3,7 +3,7 @@ import Header from '../components/Header'
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en">
       <head />
       <body>
         <Header />
