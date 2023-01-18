@@ -8,8 +8,10 @@ export default function ProblemPage({params}) {
     return (
         <div>
             <FontAwesomeIcon className={styles.alertIcon} icon={faExclamationCircle} />
-            <b className={styles.headline}>Specify Your Problem</b>
-            <ProblemSection url={params.deviceName}/>
+            <h3 className={styles.headline}>Specify Your Problem</h3>
+            <div className={styles.wrapper}>
+                <ProblemSection url={params.deviceName}/>
+            </div>
         </div>
     )
 }

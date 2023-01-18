@@ -13,39 +13,62 @@
 .rec1 {
   top: 2.75rem;
   left: 0;
-  width: 50rem;
+  width: max(55vw, 38rem);
   height: 3.75rem;
 }
 .rec2 {
   top: 6.5rem;
   left: 0;
   width: 13.33vw;
-  height: 14.75rem;
+  height: 16rem;
 }
 .rec3 {
-  top: 17.5rem;
+  top: var(--bg-start2);
   left: 0;
   width: 100%;
   height: 3.75rem;
 }
 .rec4 {
-  top: 17.5rem;
+  top: var(--bg-start2);
   right: 0;
   width: 13.33vw;
   height: 34.5rem;
 }
 .rec5 {
-  top: 48.25rem;
-  left: 0;
-  width: 100%;
+  top: calc(var(--bg-start2) + 30.75rem);
+  right: 0;
+  width: 66vw;
   height: 3.75rem;
+}
+.rec6 {
+  top: calc(var(--bg-start2) + 30.75rem);
+  right: 48vw;
+  width: 18vw;
+  height: 35rem;
+}
+.bgPattern1 {
+  position: absolute;
+  top: 31.75rem;
+  left: 0;
+  width: 14.5rem;
+  height: 28rem;
 }
 .aboutHero {
   position: relative;
   margin: 10vw var(--start-point) 3.75rem var(--start-point);
 }
+.targetIcon {
+  position: absolute;
+  top: -2.15rem;
+  left: -3.25rem;
+  color: var(--style);
+  width: 6.5rem;
+  height: 6.5rem;
+  rotate: 30deg;
+}
 .headline {
   position: relative;
+  margin: 0;
   font-size: var(--h1);
 }
 .headPara {
@@ -62,9 +85,18 @@
   align-items: flex-end;
   padding: 3.75rem var(--start-point);
 }
+.heartIcon {
+  position: absolute;
+  top: 5.5rem;
+  right: 6.3vw;
+  width: 5.5rem;
+  height: 5.5rem;
+  color: var(--style);
+}
 .subHeading1 {
   position: relative;
   margin-top: 3.75rem;
+  margin-bottom: 0;
   font-size: var(--h3);
 }
 .cosSection {
@@ -77,7 +109,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 .cofImage {
@@ -93,18 +125,19 @@
 .sec2 {
   position: relative;
   margin-top: 3.75rem;
-  padding: 3.75rem var(--start-point);
 }
 .subHeading2 {
   position: relative;
   font-size: var(--h2);
-  margin-top: 3.75rem;
+  margin-top: 7.5rem;
+  margin-bottom: 0;
+  margin-left: var(--start-point);
 }
 .feedbackSection {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-top: 3.75rem;
+  margin: 3.75rem var(--start-point) 3rem var(--start-point);
   column-gap: 6rem;
   row-gap: 3rem;
 }
@@ -112,12 +145,13 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  font-size: var(--h5);
-}
+  font-size: var(--h5);}
 .fieldName {
   position: relative;
   color: var(--text);
+  font-weight: 700;
 }
+.feedInput,
 .fieldInput {
   position: relative;
   border: 0;
@@ -131,4 +165,116 @@
   box-shadow: var(--drop-mini);
   color: var(--text);
   background-color: var(--background);
+}
+.feedInput {
+  height: 11rem;
+  resize: none;
+}
+.sendButton {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  margin-left: var(--start-point);
+  border-radius: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  transition: .2s ease-in-out;
+}
+.sendButton:hover {
+  transform: scale(1.01);
+  box-shadow: var(--drop-mini);
+}
+.sendButton:active {
+  transform: scale(1);
+}
+.sendButtonIcon {
+  color: var(--background);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.75rem;
+  padding: .75rem 1.25rem;
+  background-color: var(--style);
+}
+.attribution span {
+  width: fit-content;
+  text-align: center;
+  font-style: var(--noto);
+}
+.attribution a {
+  color: var(--primary);
+}
+
+
+
+
+
+@media screen and (max-width: 406px) {
+  .rec2 {
+    height: 19.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rec2,
+  .rec4 {
+    width: 21vw;
+  }
+  .rec6 {
+    right: 38vw;
+    width: 28vw;
+  }
+  .feedbackSection {
+    flex-direction: column;
+  }
+  .feedInput,
+  .fieldInput {
+    width: calc(100% - var(--start-point) - .5rem);
+    padding: var(--padding-2xs) var(--padding-3xs);
+    font-size: var(--h5);
+  }
+  .feedInput {
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .rec1 {
+    width: 20rem;
+    height: 8.75rem;
+  }
+  .rec2 {
+    top: 11.5rem;
+  }
+  .headPara {
+    width: fit-content;
+  }
+  .cosSection {
+    gap: 2.5rem;
+  }
+  .cof {
+    gap: 1.25rem;
+  }
+  .cofImage {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgPattern1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .rec6 {
+    height: 45rem;
+  }
 }

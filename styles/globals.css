@@ -39,14 +39,15 @@ body {
   /* Gaps */
   --start-point: 10vw;
   --bg-start: -6rem;
+  --bg-start2: 18.75rem;
   --gap-sm: 16px;
   --gap-md: 80px;
 
   /* Paddings */
   --padding-2xs: 1.3125rem;
   --padding-3xs: 1.875rem;
+  --padding-sm: 1.5rem;
   --padding-xs: 22px;
-  --padding-sm: 24px;
   --padding-md: 28px;
   --padding-lg: 32px;
   --padding-xl: 40px;
@@ -76,7 +77,9 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 
-@media (max-width: 480px) {
+
+
+@media screen and (max-width: 480px) {
   html {
     font-size: 90%;
   }
@@ -84,5 +87,17 @@ input[type=number]::-webkit-inner-spin-button {
     --start-point: 2rem;
     --padding-2xs: 1.15rem;
     --padding-3xs: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  :root {
+    --bg-start2: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  :root {
+    --bg-start2: 27rem;
   }
 }

@@ -51,8 +51,10 @@ export default function Home() {
       <div className={styles.end}>
         <div className={styles.endOfPage}>End of Page</div>
         <div className={styles.endLine}>
-          <span>{`Wanna hear more about us visit `}</span>
-          <span className={styles.aboutAccent}>About</span>
+          <span>
+            {'Want to hear more from us visit '}
+            <Link className={styles.aboutAccent} href={'/about'}>About</Link>
+          </span>
         </div>
       </div>
     </div>

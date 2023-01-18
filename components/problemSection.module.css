@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-top: 2.5rem;
+  margin-top: 3.75rem;
   column-gap: 3rem;
   row-gap: 2.5rem;
 }
@@ -64,4 +64,14 @@
   color: var(--background);
   width: 1.625rem;
   height: 1.625rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .problemSection {
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+  }
 }

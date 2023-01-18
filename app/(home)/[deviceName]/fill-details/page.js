@@ -7,8 +7,10 @@ export default function FillDetailsPage() {
     return (
         <div>
             <FontAwesomeIcon className={styles.penIcon} icon={faPen} />
-            <b className={styles.headline}>Fill Your Details</b>
-            <FillDetailsSection/>
+            <h3 className={styles.headline}>Fill Your Details</h3>
+            <div className={styles.wrapper}>
+                <FillDetailsSection/>
+            </div>
         </div>
     )
 }

@@ -2,9 +2,8 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './fillDetails.module.css'
-import { faChevronLeft, faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
 
 
 const data = [
@@ -21,24 +20,29 @@ export default function FillDetailsSection() {
 
     const router = useRouter()
     const [name, setName] = useState('')
-    const [number, setNumber] = useState(0)
+    const [number, setNumber] = useState()
     const [isOpen, open] = useState(false)
     const [pickupPoint, setPickupPoint] = useState('')
+
+
+    const verifyNumber = () => {
+        //
+    }
 
 
     return (
         <div>
             <div className={styles.fillDetailsSection}>
                 <div className={styles.field}>
-                    <b className={styles.fieldName}>Name</b>
+                    <label className={styles.fieldName}>Name</label>
                     <input className={styles.fieldInput} type={'text'} value={name} placeholder={'Enter your name'} onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div className={styles.field}>
-                    <b className={styles.fieldName}>Pickup Point</b>
-                    <div className={styles.pickup}>
+                    <label className={styles.fieldName}>Pickup Point</label>
+                    <div className={styles.pickup} onClick={() => open(!isOpen)}>
                         <p className={styles.pickupText}>{pickupPoint==='' ? 'Choose pickup point' : pickupPoint}</p>
-                        <div className={styles.downButton} onClick={() => open(!isOpen)}>
-                            <FontAwesomeIcon className={styles.downButtonIcon} icon={faChevronDown} />
+                        <div className={styles.downButton}>
+                            <FontAwesomeIcon className={styles.downButtonIcon} icon={isOpen? faChevronUp : faChevronDown} />
                         </div>
                     </div>
                     {isOpen && <div className={styles.results}>
@@ -51,17 +55,17 @@ export default function FillDetailsSection() {
                     </div>}
                 </div>
                 <div className={styles.field}>
-                    <b className={styles.fieldName}>Mobile Number</b>
-                    <input className={styles.fieldInput} type={'number'} maxLength={10} value={number} placeholder={'Enter your number'} onChange={(e) => setNumber(e.target.value)}/>
+                    <label className={styles.fieldName}>Mobile Number</label>
+                    <input className={styles.fieldInput} type={'number'} max={'100'} value={number} placeholder={'Enter your number'} onChange={(e) => setNumber(e.target.value)}/>
                 </div>
             </div>
             <div className={styles.buttonsSection}>
                 <div className={styles.prevButton} onClick={() => router.back()}>
                     <FontAwesomeIcon className={styles.prevButtonIcon} icon={faChevronLeft} />
                 </div>
-                <Link className={styles.nextButton} href={{pathname:'/about', query:{name:'naem'}}}>
+                <div className={styles.nextButton} onClick={() => verifyNumber}>
                     <FontAwesomeIcon className={styles.nextButtonIcon} icon={faChevronRight} />
-                </Link>
+                </div>
             </div>
         </div>
     )
