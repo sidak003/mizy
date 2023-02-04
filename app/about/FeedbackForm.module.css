@@ -1,0 +1,55 @@
+.feedbackSection {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 3.75rem var(--start-point) 3rem var(--start-point);
+    column-gap: 6rem;
+    row-gap: 3rem;
+}
+.field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: var(--h5);
+}
+.fieldName {
+    position: relative;
+    color: var(--text);
+    font-weight: 700;
+}
+.feedInput,
+.fieldInput {
+    position: relative;
+    border: 0;
+    outline: none;
+    width: 20rem;
+    margin-top: 1.5rem;
+    padding: 1rem var(--padding-sm);
+    border-radius: var(--br-xs);
+    font-size: var(--base);
+    font-family: var(--noto);
+    box-shadow: var(--drop-mini);
+    color: var(--text);
+    background-color: var(--background);
+}
+.feedInput {
+    height: 11rem;
+    resize: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .feedbackSection {
+        flex-direction: column;
+    }
+    .feedInput,
+    .fieldInput {
+        width: calc(100% - var(--start-point) - .5rem);
+        padding: var(--padding-2xs) var(--padding-3xs);
+        font-size: var(--h5);
+    }
+    .feedInput {
+        height: 13rem;
+    }
+}

@@ -1,0 +1,125 @@
+.order {
+    position: relative;
+}
+.rec1,
+.rec2,
+.rec3,
+.rec4 {
+    position: absolute;
+    background-color: var(--style);
+}
+.rec1 {
+    top: 2.75rem;
+    left: 0;
+    width: max(55vw, 29rem);
+    height: 3.75rem;
+}
+.rec2 {
+    top: 6.5rem;
+    left: 0;
+    width: 13.33vw;
+    height: 17.25rem;
+}
+.rec3 {
+    top: 20rem;
+    left: 0;
+    width: calc(49.3vw + 2.79rem);
+    height: 3.75rem;
+}
+.rec4 {
+    top: 20rem;
+    left: calc(49.3vw - 2.79rem);
+    width: 5.58rem;
+    height: 5.625rem;
+}
+.bgPattern1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 19.44rem;
+    height: 35rem;
+}
+.hero {
+    position: relative;
+    margin: 10vw var(--start-point) 0 var(--start-point);
+}
+.giftIcon {
+    position: absolute;
+    top: -2.25rem;
+    left: -4.75rem;
+    color: var(--style);
+    width: 7rem;
+    height: 7rem;
+}
+.headline {
+    position: relative;
+    margin: 0;
+    font-size: var(--h1);
+}
+.headPara {
+    position: relative;
+    margin-top: 2rem;
+    width: 30rem;
+    font-family: var(--noto);
+    color: var(--text-50);
+}
+.end {
+    position: relative;
+    margin-top: 9.375rem;
+}
+.endOfPage {
+    position: relative;
+    margin-top: .75rem;
+    font-size: var(--h5);
+    line-height: 2.19375rem;
+    font-weight: 500;
+    text-align: center;
+}
+.accent {
+    color: var(--primary);
+}
+.endLine {
+    position: relative;
+    margin-top: .375rem;
+    font-family: var(--noto);
+    text-align: center;
+    color: var(--text-75);
+}
+
+
+
+
+@media screen and (max-width: 373px) {
+    .rec2 {
+        height: 18.75rem;
+    }
+    .rec3,
+    .rec4 {
+        top: 21.5rem;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .rec2 {
+        height: 18.75rem;
+    }
+    .rec3,
+    .rec4 {
+        top: 21.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rec2 {
+        width: 21vw;
+    }
+    .headPara {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .bgPattern1 {
+        display: none;
+    }
+}

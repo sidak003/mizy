@@ -1,8 +1,9 @@
-import styles from '../../styles/styles.module.css'
-import SearchBar from '../../components/SearchBar'
+import styles from './Home.module.css'
 import Image from 'next/image'
+import SearchWrapper from './SearchWrapper'
 
-export default function HomeLayout({ children }) {
+
+export default async function HomeLayout({ children }) {
     return (
         <div>
             <div className={styles.hero}>
@@ -21,7 +22,7 @@ export default function HomeLayout({ children }) {
                     For SRMites, By SRMites
                     </p>
                 </div>
-                <SearchBar />
+                <SearchWrapper />
             </div>
             {children}
         </div>

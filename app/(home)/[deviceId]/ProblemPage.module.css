@@ -1,0 +1,66 @@
+.window {
+    position: relative;
+    top: 0;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.rec1 {
+    position: absolute;
+    top: -2.25rem;
+    left: 0;
+    width: 13.33vw;
+    height: 10rem;
+    background-color: var(--style);
+}
+.rec2 {
+    position: absolute;
+    top: 7.75rem;
+    left: 0;
+    width: 100%;
+    height: 4.875rem;
+    background-color: var(--style);
+}
+.alertIcon,
+.pencilIcon {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 3.5rem;
+    left: 6.2vw;
+    color: var(--style);
+}
+.pencilIcon {
+    width: 5rem;
+    height: 5rem;
+    top: 4rem;
+    left: 7.75vw;
+}
+.headline {
+    position: relative;
+    margin: 0 0 0 var(--start-point);
+    color: var(-text);
+    font-size: var(--h3);
+}
+.wrapper {
+    padding: 0 var(--start-point) 2.25rem var(--start-point);
+    background-color: var(--style);
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .rec1 {
+        width: 21vw;
+    }
+    .headline {
+        margin-right: var(--start-point);
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .rec2 {
+        height: 7.777rem;
+    }
+}

@@ -1,23 +1,21 @@
+import styles from './About.module.css'
 import Image from 'next/image'
-import styles from './about.module.css'
-import { faCrosshairs, faHeart, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { HiBolt, HiHeart, HiPaperAirplane } from 'react-icons/hi2'
 import Link from 'next/link'
+import FeedbackForm from './FeedbackForm'
 
 export default function About() {
-
-
     return (
         <div className={styles.about}>
-            <div className={styles.rec1}/>
-            <div className={styles.rec2}/>
-            <div className={styles.rec3}/>
-            <div className={styles.rec4}/>
-            <div className={styles.rec5}/>
-            <div className={styles.rec6}/>
+            <div className={styles.rec1} />
+            <div className={styles.rec2} />
+            <div className={styles.rec3} />
+            <div className={styles.rec4} />
+            <div className={styles.rec5} />
+            <div className={styles.rec6} />
             <Image className={styles.bgPattern1} alt={''} src={'/group-4.svg'} width={1} height={1} />
-            <div className={styles.aboutHero}>
-                <FontAwesomeIcon className={styles.targetIcon} icon={faCrosshairs} />
+            <div className={styles.hero}>
+                <HiBolt className={styles.boltIcon} />
                 <h1 className={styles.headline}>What's Mizy?</h1>
                 <p className={styles.headPara}>
                     You know its pretty tough to walk to a repair shop, 
@@ -31,7 +29,7 @@ export default function About() {
                 </p>
             </div>
             <div className={styles.sec1}>
-                <FontAwesomeIcon className={styles.heartIcon} icon={faHeart} />
+                <HiHeart className={styles.heartIcon} />
                 <h3 className={styles.subHeading1}>Meet the Co's</h3>
                 <div className={styles.cosSection}>
                     <div className={styles.cof}>
@@ -46,23 +44,10 @@ export default function About() {
             </div>
             <div className={styles.sec2}>
                 <h2 className={styles.subHeading2}>Tell Us To Improve</h2>
-                <div className={styles.feedbackSection}>
-                    <div className={styles.field}>
-                        <label className={styles.fieldName}>Name</label>
-                        <input className={styles.fieldInput} type={'text'} placeholder={'Enter your name'} />
-                    </div>
-                    <div className={styles.field}>
-                        <label className={styles.fieldName}>@Email</label>
-                        <input className={styles.fieldInput} type={'email'} placeholder={'Enter your email'} />
-                    </div>
-                    <div className={styles.field}>
-                        <label className={styles.fieldName}>Feedback</label>
-                        <textarea className={styles.feedInput} type={'text'} maxLength={256} placeholder={'We would love to hear you out............\n(only 256 characters)'} />
-                    </div>
-                </div>
-                <div className={styles.sendButton} >
-                    <FontAwesomeIcon className={styles.sendButtonIcon} icon={faPaperPlane} />
-                </div>
+                <FeedbackForm />
+                <button className={styles.sendButton} form={'feedbackForm'} type={'submit'}>
+                    <HiPaperAirplane className={styles.sendButtonIcon} />
+                </button>
             </div>
             <div className={styles.attribution}>
                 <span>

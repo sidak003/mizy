@@ -1,5 +1,5 @@
 .about {
-  position: relative;
+    position: relative;
 }
 .rec1,
 .rec2,
@@ -7,274 +7,230 @@
 .rec4,
 .rec5,
 .rec6 {
-  position: absolute;
-  background-color: var(--style);
+    position: absolute;
+    background-color: var(--style);
 }
 .rec1 {
-  top: 2.75rem;
-  left: 0;
-  width: max(55vw, 38rem);
-  height: 3.75rem;
+    top: 2.75rem;
+    left: 0;
+    width: max(55vw, 38rem);
+    height: 3.75rem;
 }
 .rec2 {
-  top: 6.5rem;
-  left: 0;
-  width: 13.33vw;
-  height: 16rem;
+    top: 6.5rem;
+    left: 0;
+    width: 13.33vw;
+    height: var(--bg-start2);
 }
 .rec3 {
-  top: var(--bg-start2);
-  left: 0;
-  width: 100%;
-  height: 3.75rem;
+    top: calc(var(--bg-start2) + 2.75rem);
+    left: 0;
+    width: 100%;
+    height: 3.75rem;
 }
 .rec4 {
-  top: var(--bg-start2);
-  right: 0;
-  width: 13.33vw;
-  height: 34.5rem;
+    top: calc(var(--bg-start2) + 2.75rem);
+    right: 0;
+    width: 13.33vw;
+    height: 34.5rem;
 }
 .rec5 {
-  top: calc(var(--bg-start2) + 30.75rem);
-  right: 0;
-  width: 66vw;
-  height: 3.75rem;
+    top: calc(var(--bg-start2) + 33.5rem);
+    right: 0;
+    width: 66vw;
+    height: 3.75rem;
 }
 .rec6 {
-  top: calc(var(--bg-start2) + 30.75rem);
-  right: 48vw;
-  width: 18vw;
-  height: 35rem;
+    top: calc(var(--bg-start2) + 33.5rem);
+    right: 48vw;
+    width: 18vw;
+    height: 35rem;
 }
 .bgPattern1 {
-  position: absolute;
-  top: 31.75rem;
-  left: 0;
-  width: 14.5rem;
-  height: 28rem;
+    position: absolute;
+    top: 31.75rem;
+    left: 0;
+    width: 14.5rem;
+    height: 28rem;
 }
-.aboutHero {
-  position: relative;
-  margin: 10vw var(--start-point) 3.75rem var(--start-point);
+.hero {
+    position: relative;
+    margin: 10vw var(--start-point) 3.75rem var(--start-point);
 }
-.targetIcon {
-  position: absolute;
-  top: -2.15rem;
-  left: -3.25rem;
-  color: var(--style);
-  width: 6.5rem;
-  height: 6.5rem;
-  rotate: 30deg;
+.boltIcon {
+    position: absolute;
+    top: -2.5rem;
+    left: -4rem;
+    color: var(--style);
+    width: 7.5rem;
+    height: 7.5rem;
 }
 .headline {
-  position: relative;
-  margin: 0;
-  font-size: var(--h1);
+    position: relative;
+    margin: 0;
+    font-size: var(--h1);
 }
 .headPara {
-  position: relative;
-  margin-top: 2rem;
-  width: 30rem;
-  font-family: var(--noto);
-  color: var(--text-50);
+    position: relative;
+    margin-top: 2rem;
+    width: 30rem;
+    font-family: var(--noto);
+    color: var(--text-50);
 }
 .sec1 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: flex-end;
-  padding: 3.75rem var(--start-point);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    padding: 3.75rem var(--start-point);
 }
 .heartIcon {
-  position: absolute;
-  top: 5.5rem;
-  right: 6.3vw;
-  width: 5.5rem;
-  height: 5.5rem;
-  color: var(--style);
+    position: absolute;
+    top: 5rem;
+    right: 5.75vw;
+    width: 6.5rem;
+    height: 6.5rem;
+    color: var(--style);
 }
 .subHeading1 {
-  position: relative;
-  margin-top: 3.75rem;
-  margin-bottom: 0;
-  font-size: var(--h3);
+    position: relative;
+    margin-top: 3.75rem;
+    margin-bottom: 0;
+    font-size: var(--h3);
 }
 .cosSection {
-  display: flex;
-  position: relative;
-  margin-top: 2.5rem;
-  gap: 4rem;
+    display: flex;
+    position: relative;
+    margin-top: 2.5rem;
+    gap: 4rem;
 }
 .cof {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 1.5rem;
 }
 .cofImage {
-  width: 11rem;
-  height: 11rem;
-  border-radius: 1.875rem;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 1.875rem;
 }
 .cofName {
-  font-size: var(--h5);
-  font-weight: 500;
-  color: var(--text-75);
+    font-size: var(--h5);
+    font-weight: 500;
+    color: var(--text-75);
 }
 .sec2 {
-  position: relative;
-  margin-top: 3.75rem;
+    position: relative;
+    margin-top: 3.75rem;
 }
 .subHeading2 {
-  position: relative;
-  font-size: var(--h2);
-  margin-top: 7.5rem;
-  margin-bottom: 0;
-  margin-left: var(--start-point);
-}
-.feedbackSection {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  margin: 3.75rem var(--start-point) 3rem var(--start-point);
-  column-gap: 6rem;
-  row-gap: 3rem;
-}
-.field {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  font-size: var(--h5);}
-.fieldName {
-  position: relative;
-  color: var(--text);
-  font-weight: 700;
-}
-.feedInput,
-.fieldInput {
-  position: relative;
-  border: 0;
-  outline: none;
-  width: 20rem;
-  margin-top: 1.5rem;
-  padding: 1rem var(--padding-sm);
-  border-radius: var(--br-xs);
-  font-size: var(--base);
-  font-family: var(--noto);
-  box-shadow: var(--drop-mini);
-  color: var(--text);
-  background-color: var(--background);
-}
-.feedInput {
-  height: 11rem;
-  resize: none;
+    position: relative;
+    font-size: var(--h2);
+    margin-top: 7.5rem;
+    margin-bottom: 0;
+    margin-left: var(--start-point);
 }
 .sendButton {
-  display: flex;
-  position: relative;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-  margin-left: var(--start-point);
-  border-radius: 3rem;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary);
-  transition: .2s ease-in-out;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    margin-left: var(--start-point);
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary);
+    transition: .1s ease-in-out;
 }
 .sendButton:hover {
-  transform: scale(1.01);
-  box-shadow: var(--drop-mini);
+    transform: scale(1.01);
+    box-shadow: var(--drop-mini);
 }
 .sendButton:active {
-  transform: scale(1);
+    transform: scale(1);
 }
 .sendButtonIcon {
-  color: var(--background);
-  width: 1.5rem;
-  height: 1.5rem;
+    color: var(--background);
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: .25rem;
 }
 .attribution {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.75rem;
-  padding: .75rem 1.25rem;
-  background-color: var(--style);
+    display: flex;
+    justify-content: center;
+    margin-top: 3.75rem;
+    padding: .75rem 1.25rem;
+    background-color: var(--style);
 }
 .attribution span {
-  width: fit-content;
-  text-align: center;
-  font-style: var(--noto);
+    width: fit-content;
+    text-align: center;
+    font-style: var(--noto);
 }
 .attribution a {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 
 
-
-
-@media screen and (max-width: 406px) {
-  .rec2 {
-    height: 19.25rem;
-  }
-}
 
 @media screen and (max-width: 480px) {
-  .rec2,
-  .rec4 {
-    width: 21vw;
-  }
-  .rec6 {
-    right: 38vw;
-    width: 28vw;
-  }
-  .feedbackSection {
-    flex-direction: column;
-  }
-  .feedInput,
-  .fieldInput {
-    width: calc(100% - var(--start-point) - .5rem);
-    padding: var(--padding-2xs) var(--padding-3xs);
-    font-size: var(--h5);
-  }
-  .feedInput {
-    height: 13rem;
-  }
+    .rec2,
+    .rec4 {
+        width: 21vw;
+    }
+    .rec6 {
+        right: 38vw;
+        width: 28vw;
+    }
 }
 
 @media screen and (max-width: 585px) {
-  .rec1 {
-    width: 20rem;
-    height: 8.75rem;
-  }
-  .rec2 {
-    top: 11.5rem;
-  }
-  .headPara {
-    width: fit-content;
-  }
-  .cosSection {
-    gap: 2.5rem;
-  }
-  .cof {
-    gap: 1.25rem;
-  }
-  .cofImage {
-    width: 8rem;
-    height: 8rem;
-  }
+    .rec1 {
+        width: 20rem;
+        height: 8.75rem;
+    }
+    .rec2 {
+        top: 11.5rem;
+    }
+    .rec3,
+    .rec4 {
+        top: calc(var(--bg-start2) + 7.75rem);
+    }
+    .rec4 {
+        height: 31.5rem;
+    }
+    .rec5,
+    .rec6 {
+        top: calc(var(--bg-start2) + 35.5rem);
+    }
+    .headPara {
+        width: fit-content;
+    }
+    .cosSection {
+        gap: 2.5rem;
+    }
+    .cof {
+        gap: 1.25rem;
+    }
+    .cofImage {
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .bgPattern1 {
-    display: none;
-  }
+    .bgPattern1 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-  .rec6 {
-    height: 45rem;
-  }
+    .rec6 {
+        height: 45rem;
+    }
 }

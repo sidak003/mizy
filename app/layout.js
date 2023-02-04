@@ -1,12 +1,29 @@
-import '../styles/globals.css'
-import Header from '../components/Header'
+import Navbar from './Navbar'
+import { Montserrat, Noto_Sans } from '@next/font/google'
+import './globals.css'
 
-export default function RootLayout({ children }) {
+
+const mont = Montserrat({
+    weight : ['400', '500', '700'],
+    subsets : ['latin'],
+    display : 'swap',
+    variable : '--mont'
+})
+
+const noto = Noto_Sans({
+    weight : ['400'],
+    subsets : ['latin'],
+    display : 'swap',
+    variable : '--noto'
+})
+
+
+export default async function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${mont.variable} ${noto.variable}`}>
       <head />
       <body>
-        <Header />
+        <Navbar />
         {children}
       </body>
     </html>
