@@ -7,28 +7,27 @@ import { useSearchParams } from 'next/navigation'
 import { HiChevronDown, HiChevronUp, HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
 
 
-const createOrder = async(url, { arg }) => {
-    const router = useRouter()
-    const options = {
-        method : 'POST',
-        body : JSON.stringify(arg)
-    }
-    return fetch(url, options).then(res => {
-        if(!res.ok) throw Error('Error Bad Response')
-        router.push('/order-summary')
-    })
-}
-
-
 export default function OrderForm( {points} ) {
 
 
     const router = useRouter()
     const searchParams = useSearchParams()
-    const { trigger } = useSWRMutation(`${process.env.clientApii}/createorder`, createOrder)
     const [validation, setValidation] = useState(false)
     const [isOpen, open] = useState(false)
     const [point, setPoint] = useState('')
+
+
+    const createOrder = async(url, { arg }) => {
+        const options = {
+            method : 'POST',
+            body : JSON.stringify(arg)
+        }
+        return fetch(url, options).then(res => {
+            if(!res.ok) throw Error('Error Bad Response')
+            router.push('/order-summary')
+        })
+    }
+    const { trigger } = useSWRMutation(`${process.env.clientApii}/createorder`, createOrder)
 
 
     const validate = () => {

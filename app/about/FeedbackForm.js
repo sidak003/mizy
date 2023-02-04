@@ -3,23 +3,23 @@ import styles from './FeedbackForm.module.css'
 import useSWRMutation from 'swr/mutation'
 
 
-const createFeedback = async(url, { arg }) => {
-    const options = {
-        method : 'POST',
-        body : JSON.stringify(arg.body)
-    }
-    return fetch(`${process.env.clientApii}/createfeedback`, options).then(res => {
-        if(!res.ok) throw Error('Error Bad Response')
-        document.getElementById('feedbackForm').reset()
-        alert('Congo, We received your feedback')
-    })
-}
-
-
 export default function FeedbackForm() {
 
+
+    const createFeedback = async(url, { arg }) => {
+        const options = {
+            method : 'POST',
+            body : JSON.stringify(arg.body)
+        }
+        return fetch(`${process.env.clientApii}/createfeedback`, options).then(res => {
+            if(!res.ok) throw Error('Error Bad Response')
+            document.getElementById('feedbackForm').reset()
+            alert('Congo, We received your feedback')
+        })
+    }
     const { trigger } = useSWRMutation(`${process.env.clientApii}/createfeedback`, createFeedback)
 
+    
     return (
         <form className={styles.feedbackSection} id={'feedbackForm'} onSubmit={(e) => {
             e.preventDefault()

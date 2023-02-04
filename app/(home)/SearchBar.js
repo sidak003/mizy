@@ -31,7 +31,6 @@ export default function SearchBar( {devices} ) {
                     return <Link className={styles.item} href={`/${device.deviceId}`} key={device.deviceId} onClick={() => {
                         setSearchedDevice(device.deviceName)
                         setFilteredData([])
-                        document.getElementById('pp').scrollIntoView({ behavior : 'smooth' })
                     }}>
                         <p>{device.deviceName}</p>
                     </Link>

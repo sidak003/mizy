@@ -2,6 +2,7 @@ import styles from './ProblemPage.module.css'
 import PpSection from './PpSection'
 import { HiExclamationTriangle } from 'react-icons/hi2'
 
+export const dynamicParams = false;
 
 async function getPp(deviceId) {
     try {
