@@ -10,7 +10,7 @@ export default function OrderSummary() {
             <div className={styles.rec2} />
             <div className={styles.rec3} />
             <div className={styles.rec4} />
-            <Image className={styles.bgPattern1} alt={''} src={'/group-5.svg'} width={1} height={1} />
+            <Image className={styles.bgPattern1} alt={''} src={'/bgPatternOrderSummary.svg'} width={1} height={1} />
             <div className={styles.hero}>
                 <HiGiftTop className={styles.giftIcon} />
                 <h1 className={styles.headline}>Congrats!</h1>

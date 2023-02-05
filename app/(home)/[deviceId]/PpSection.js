@@ -10,7 +10,7 @@ export default function ProblemSection( {ppList} ) {
     const [selectedPpId, selectPp] = useState({})
 
     return (
-        <div className={styles.problemSection} id={'pp'}>
+        <div className={styles.problemSection}>
             {ppList?.map((pp) => {
                 return (
                     <div className={selectedPpId === pp.ppId ? styles.selectedPp : styles.pp} key={pp.ppId} onClick={() => {selectPp(selectedPpId===pp.ppId ? 0 : pp.ppId)}}>

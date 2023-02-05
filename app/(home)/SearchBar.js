@@ -31,6 +31,7 @@ export default function SearchBar( {devices} ) {
                     return <Link className={styles.item} href={`/${device.deviceId}`} key={device.deviceId} onClick={() => {
                         setSearchedDevice(device.deviceName)
                         setFilteredData([])
+                        scrollTo(0, 600)
                     }}>
                         <p>{device.deviceName}</p>
                     </Link>

@@ -123,6 +123,7 @@
     margin-right: .25rem;
     background-color: var(--background);
 }
+.loading,
 .prevButtonIcon,
 .nextButtonIcon {
     color: var(--background);
@@ -140,6 +141,17 @@
 .prevButton:active,
 .nextButton:active {
     transform: scale(1);
+}
+.loading {
+    animation: rotation .75s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 

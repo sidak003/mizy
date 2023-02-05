@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation'
 import { HiChevronDown, HiChevronUp, HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
+import { AiOutlineLoading } from 'react-icons/ai'
 
 
 export default function OrderForm( {points} ) {
@@ -27,7 +28,7 @@ export default function OrderForm( {points} ) {
             router.push('/order-summary')
         })
     }
-    const { trigger } = useSWRMutation(`${process.env.clientApii}/createorder`, createOrder)
+    const { trigger, isMutating } = useSWRMutation(`${process.env.clientApii}/createorder`, createOrder)
 
 
     const validate = () => {
@@ -86,7 +87,7 @@ export default function OrderForm( {points} ) {
                 </button>
                 {validation && point &&
                 <button className={styles.nextButton} form={'orderForm'} type={'submit'}>
-                    <HiChevronRight className={styles.nextButtonIcon} />
+                    {isMutating? <AiOutlineLoading className={styles.loading} /> : <HiChevronRight className={styles.nextButtonIcon} />}
                 </button>}
             </div>
         </div>

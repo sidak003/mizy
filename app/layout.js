@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import { Montserrat, Noto_Sans } from '@next/font/google'
-import './globals.css'
+import './Globals.css'
 
 
 const mont = Montserrat({
