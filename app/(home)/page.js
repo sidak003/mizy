@@ -21,13 +21,13 @@ export default async function Home() {
         <HiMapPin className={styles.locationDotIcon} />
         <h3 className={styles.heading1}>Locations</h3>
         <div className={styles.loc1}>
-          <Image className={styles.loc1Image} alt={''} src='/srm.jpg' width={200} height={200} />
+          <Image className={styles.loc1Image} alt={'SRM University'} src='/srm.jpg' width={200} height={200} />
           <div className={styles.loc1Name}>
             <p>SRM<br/>Campus</p>
           </div>
         </div>
       </div>
-      <div className={styles.section2}>  
+      <div className={styles.section2}>
         <HiFaceSmile className={styles.faceLaughIcon} />
         <h3 className={styles.heading2}>How izy?</h3>
         <div className={styles.howIzyPara}>
@@ -40,7 +40,7 @@ export default async function Home() {
         </div>
       </div>
       <div className={styles.section3}>
-        <Image className={styles.bgPattern2} alt={''} src={'/bgPattern2Home.svg'} width={1} height={1} />
+        <Image className={styles.bgPattern2} alt={'Background'} src={'/background/bgPattern2Home.svg'} width={1} height={1} />
         <HiPhone className={styles.phoneIcon} />
         <h3 className={styles.heading3}>Contact Us</h3>
         <div className={styles.contactSection}>

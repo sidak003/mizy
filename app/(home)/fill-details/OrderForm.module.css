@@ -28,6 +28,7 @@
     font-size: var(--base);
     font-family: var(--noto);
     box-shadow: var(--drop-mini);
+    appearance: none;
     color: var(--text);
     background-color: var(--background);
     transition: .1s ease-in-out;

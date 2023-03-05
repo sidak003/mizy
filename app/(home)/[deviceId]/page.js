@@ -1,6 +1,6 @@
 import styles from './ProblemPage.module.css'
 import PpSection from './PpSection'
-import { HiExclamationTriangle } from 'react-icons/hi2'
+import { HiExclamationTriangle, HiOutlineInformationCircle } from 'react-icons/hi2'
 
 export const dynamicParams = false;
 
@@ -25,7 +25,10 @@ export default async function ProblemPage( {params} ) {
             <h3 className={styles.headline}>Specify Your Problem</h3>
             <div className={styles.wrapper}>
                 <PpSection ppList={ppList}/>
-                {/* <PpSection ppList={[{"ppId":10,"problemName":"Broken Screen","price":"2999"},{"ppId":11,"problemName":"Won't Charge","price":"499"},{"ppId":12,"problemName":"Battery Issue","price":"1299"},{"ppId":13,"problemName":"Water Damage","price":"1999"}]}/> */}
+                {/* <PpSection ppList={[{"ppId":2029,"problemName":"Broken Screen","price":"*"},{"ppId":1353,"problemName":"Won't Charge","price":"898"},{"ppId":2755,"problemName":"Short Battery Life","price":"*"},{"ppId":1354,"problemName":"Mic","price":"898"},{"ppId":1355,"problemName":"Speaker","price":"898"},{"ppId":1356,"problemName":"Earpiece","price":"898"},{"ppId":2030,"problemName":"Phone Dead","price":"*"}]}/> */}
+                <div className={styles.infoLine}><HiOutlineInformationCircle className={styles.icon}/>
+                    {'Price would be told before pickup for confirmation via call or any other medium'}
+                </div>
             </div>
         </div>
     )

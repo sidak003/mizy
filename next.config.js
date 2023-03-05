@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   env : {
-    clientApii : 'https://fun73dugyb.execute-api.ap-south-1.amazonaws.com/dev',
+    clientApii : 'https://fun73dugyb.execute-api.ap-south-1.amazonaws.com/gen',
     phone1 : '8318765361',
     phone2 : '9120610600',
     email : 'mizyindia@gmail.com',

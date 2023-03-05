@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /background
+
+User-agent: Googlebot-Image
+Disallow: /cof1.jpg
+Disallow: /cof2.jpg
+Disallow: /mobileRepair.svg
+Disallow: /srm.jpg

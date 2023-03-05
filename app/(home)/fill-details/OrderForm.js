@@ -48,10 +48,10 @@ export default function OrderForm( {points} ) {
                 e.preventDefault()
                 router.prefetch('/order-summary')
                 const body = {
-                    'customerName' : e.target.nem.value,
-                    'customerPhone' : e.target.meb.value,
-                    'pointId' : point.pointId,
-                    'ppId' : searchParams.get('ppid'),
+                    "customerName" : e.target.nem.value,
+                    "customerPhone" : e.target.meb.value,
+                    "pointId" : point.pointId,
+                    "ppId" : searchParams.get('ppid'),
                 }
                 trigger(body)
             }}>

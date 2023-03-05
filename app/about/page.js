@@ -13,7 +13,7 @@ export default function About() {
             <div className={styles.rec4} />
             <div className={styles.rec5} />
             <div className={styles.rec6} />
-            <Image className={styles.bgPattern1} alt={''} src={'/bgPatternAbout.svg'} width={1} height={1} />
+            <Image className={styles.bgPattern1} alt={'Background'} src={'/background/bgPatternAbout.svg'} width={1} height={1} />
             <div className={styles.hero}>
                 <HiBolt className={styles.boltIcon} />
                 <h1 className={styles.headline}>What's Mizy?</h1>
@@ -33,12 +33,12 @@ export default function About() {
                 <h3 className={styles.subHeading1}>Meet the Co's</h3>
                 <div className={styles.cosSection}>
                     <div className={styles.cof}>
-                        <Image className={styles.cofImage} alt={''} src={'/cof1.jpg'} width={500} height={500} />
-                        <div className={styles.cofName}>Sidak Singh</div>
+                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof1.jpg'} width={500} height={500} />
+                        <div className={styles.cofName}>Sidak</div>
                     </div>
                     <div className={styles.cof}>
-                        <Image className={styles.cofImage} alt={''} src={'/cof2.jpg'} width={500} height={500} />
-                        <div className={styles.cofName}>Arish Ali</div>
+                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof2.jpg'} width={500} height={500} />
+                        <div className={styles.cofName}>Arish</div>
                     </div>
                 </div>
             </div>

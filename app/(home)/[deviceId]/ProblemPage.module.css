@@ -45,6 +45,19 @@
     padding: 0 var(--start-point) 2.25rem var(--start-point);
     background-color: var(--style);
 }
+.infoLine {
+    position: relative;
+    margin-top: 3.75rem;
+    font-family: var(--noto);
+    color: var(--text-75);
+}
+.icon {
+    position: relative;
+    top: .26rem;
+    margin-right: .25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
 
 
 

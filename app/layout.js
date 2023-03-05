@@ -1,6 +1,25 @@
-import Navbar from './Navbar'
-import { Montserrat, Noto_Sans } from '@next/font/google'
 import './Globals.css'
+import Navbar from './Navbar'
+import { Montserrat, Noto_Sans } from 'next/font/google'
+
+
+export const metadata = {
+    title: 'Mizy | Mobile Repairs in SRM',
+    applicationName: 'Mizy',
+    description: 'Mizy is a new in town pick and drop mobile repair service. For SRMites, By SRMites',
+    keywords: ['mizy', 'mobile repair', 'srm', 'srm university', 'phone repair', 'mobile shop', 'mobile repair shop near me'],
+    themeColor: '#ff7f11',
+    manifest: '/site.webmanifest',
+    icons: {
+        icon: [
+            { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+        ],
+    },
+    verification: {
+        google: 'XQj-bJZhDJA8XMXrCuMsWiUDBVnRcYCzGujrUt3J4KU',
+    },
+}
 
 
 const mont = Montserrat({

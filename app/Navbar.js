@@ -7,8 +7,8 @@ export default function Navbar() {
     return (
         <div className={styles.navbar}>
             <Link href={'/'} className={styles.logoLink}>
-                <Image className={styles.logo} alt={''} src={'./mizy.svg'} width={50} height={50} />
-                {'MIZY'}
+                <Image className={styles.logo} alt={'Mizy Logo'} src={'./mizy.svg'} width={50} height={50} />
+                {'Mizy'}
             </Link>
             <div className={styles.links}>
                 <Link href={'/'}>Home</Link>
