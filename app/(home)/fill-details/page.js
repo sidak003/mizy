@@ -15,7 +15,7 @@ async function getPoints() {
 
 
 export default async function FillDetailsPage() {
-    const points = await getPoints()
+    // const points = await getPoints()
     return (
         <div className={styles.window}>
             <div className={styles.rec1}/>
@@ -23,8 +23,8 @@ export default async function FillDetailsPage() {
             <HiPencil className={styles.pencilIcon} />
             <h3 className={styles.headline}>Fill Your Details</h3>
             <div className={styles.wrapper}>
-                <OrderForm points={points}/>
-                {/* <OrderForm points={[{"pointId":1,"pointName":"Clock Tower"},{"pointId":2,"pointName":"Pierre Fauchard"},{"pointId":3,"pointName":"Tech Park"},{"pointId":4,"pointName":"University Building"}]}/> */}
+                {/* <OrderForm points={points}/> */}
+                <OrderForm points={[{"pointId":1,"pointName":"Clock Tower"},{"pointId":2,"pointName":"Pierre Fauchard"},{"pointId":3,"pointName":"Tech Park"},{"pointId":4,"pointName":"University Building"}]}/>
             </div>
         </div>
     )
