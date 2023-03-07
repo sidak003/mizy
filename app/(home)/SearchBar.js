@@ -28,7 +28,7 @@ export default function SearchBar( {devices} ) {
             {filteredData?.length !=0 && 
             <div className={styles.results}>
                 {filteredData?.slice(0, 7).map((device, key) => {
-                    return <Link className={styles.item} href={`/${device.deviceId}`} key={device.deviceId} onClick={() => {
+                    return <Link className={styles.item} href={`/device-${device.deviceId}`} key={device.deviceId} onClick={() => {
                         setSearchedDevice(device.deviceName)
                         setFilteredData([])
                         scrollTo(0, 600)

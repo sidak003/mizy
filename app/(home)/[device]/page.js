@@ -16,7 +16,7 @@ async function getPp(deviceId) {
 
 
 export default async function ProblemPage( {params} ) {
-    const ppList = await getPp(params.deviceId)
+    const ppList = await getPp(params.device.replace('device-', ''))
     return (
         <div className={styles.window}>
             <div className={styles.rec1}/>
@@ -47,10 +47,10 @@ async function getDevices() {
 
 
 export async function generateStaticParams() {
-    const devices = await getDevices();
+    const devices = await getDevices()
     // const devices = [{"deviceId":1,"deviceName":"Samsung Galaxy S21FE"},{"deviceId":2,"deviceName":"Apple iPhone 12"},{"deviceId":3,"deviceName":"Oppo Reno 8"},{"deviceId":4,"deviceName":"Redmi Note 12 Pro + 5G"},{"deviceId":5,"deviceName":"Realme 7"},{"deviceId":6,"deviceName":"OnePlus 9T"},{"deviceId":7,"deviceName":"Poco X2"},{"deviceId":8,"deviceName":"Apple iPhone 12 Pro"}]
   
-    return devices.map((device) => ({
-        deviceId: device.deviceId.toString(),
+    return devices?.map((device) => ({
+        device: "device-" + device.deviceId.toString(),
     }));
 }

@@ -1,4 +1,4 @@
-import styles from '../[deviceId]/ProblemPage.module.css'
+import styles from '../[device]/ProblemPage.module.css'
 import { HiPencil } from 'react-icons/hi2'
 import OrderForm from './OrderForm'
 
