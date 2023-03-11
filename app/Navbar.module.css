@@ -11,7 +11,7 @@
     margin-left: var(--start-point);
     align-items: center;
     text-decoration: none;
-    color: var(--text);
+    color: var(--text-new);
     font-size: var(--h5);
     letter-spacing: 140;
     font-weight: 500;
@@ -20,7 +20,7 @@
     transition: .1s ease-in-out;
 }
 .logoLink:hover {
-    opacity: 0.75;
+    opacity: 0.8;
     transition: .1s ease-in-out;
 }
 .logo {

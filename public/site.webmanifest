@@ -1,11 +1,19 @@
 {
-    "name":"Mizy",
-    "short_name":"Mizy",
-    "start_url": "/",
-    "icons":[
-        { "src":"/icons/apple-touch-icon.png", "sizes":"180x180", "type":"image/png" },
-        { "src":"/icons/android-chrome-192x192.png", "sizes":"192x192", "type":"image/png" },
-        { "src":"/icons/android-chrome-512x512.png", "sizes":"512x512", "type":"image/png"}
+    "name": "mizy",
+    "short_name": "mizy",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
     ],
-    "display":"standalone"
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }

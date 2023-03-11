@@ -33,11 +33,11 @@ export default function About() {
                 <h3 className={styles.subHeading1}>Meet the Co's</h3>
                 <div className={styles.cosSection}>
                     <div className={styles.cof}>
-                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof1.jpg'} width={500} height={500} />
+                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof1.jpg'} width={320} height={320} />
                         <div className={styles.cofName}>Sidak</div>
                     </div>
                     <div className={styles.cof}>
-                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof2.jpg'} width={500} height={500} />
+                        <Image className={styles.cofImage} alt={'Co-Founder'} src={'/cof2.jpg'} width={320} height={320} />
                         <div className={styles.cofName}>Arish</div>
                     </div>
                 </div>

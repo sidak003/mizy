@@ -21,7 +21,7 @@ export default async function Home() {
         <HiMapPin className={styles.locationDotIcon} />
         <h3 className={styles.heading1}>Locations</h3>
         <div className={styles.loc1}>
-          <Image className={styles.loc1Image} alt={'SRM University'} src='/srm.jpg' width={200} height={200} />
+          <Image className={styles.loc1Image} alt={'SRM University'} src='/srm.jpg' width={320} height={320} />
           <div className={styles.loc1Name}>
             <p>SRM<br/>Campus</p>
           </div>
