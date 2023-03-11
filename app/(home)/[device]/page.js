@@ -6,7 +6,7 @@ export const dynamicParams = false;
 
 async function getPp(deviceId) {
     try {
-        const res = await fetch(`${process.env.clientApii}/getpp?deviceId=${deviceId}`)
+        const res = await fetch(`${process.env.clientApii}/getpp?deviceId=${236}`)
         if(!res.ok) throw new Error('Error Bad Response')
         return await res.json()
     } catch(err) {
