@@ -80,9 +80,6 @@
     border-radius: var(--br-xs);
     background-color: var(--background);
 }
-.results::-webkit-scrollbar {
-    display: none;
-}
 .item {
     display: flex;
     cursor: pointer;

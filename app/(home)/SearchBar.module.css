@@ -15,7 +15,6 @@
     width: 2rem;
     height: 2rem;
     margin-left: 1.5rem;
-    /* color: #FFAD66; */
     color: var(--text-50);
     overflow: hidden;
     transition: .1s ease-in-out;
@@ -46,9 +45,6 @@
     border-radius: var(--br-xs);
     background-color: var(--background);
 }
-.results::-webkit-scrollbar {
-    display: none;
-}
 .item {
     display: flex;
     text-decoration: none;
@@ -69,7 +65,7 @@
 
 @media screen and (max-width: 480px) {
     .searchBar {
-        margin-top: 20vw;
+        margin-top: 5rem;
     }
     .results {
         width: 100%;

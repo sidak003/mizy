@@ -5,10 +5,10 @@ const nextConfig = {
   },
   env : {
     clientApii : 'https://fun73dugyb.execute-api.ap-south-1.amazonaws.com/gen',
-    phone1 : '8318765361',
-    phone2 : '9120610600',
+    phone : '+91 6381784458',
     email : 'mizyindia@gmail.com',
-    instagramHandle : 'https://www.instagram.com/mizyindia/',
+    instagramLink : 'https://www.instagram.com/mizyindia',
+    facebookLink : 'https://www.facebook.com/mizyindia',
   },
   reactStrictMode: true,
 }

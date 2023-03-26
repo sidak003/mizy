@@ -1,7 +1,7 @@
 import styles from './Home.module.css'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 import { HiMapPin, HiPhone, HiFaceSmile } from 'react-icons/hi2'
-import { RiInstagramLine } from 'react-icons/ri'
+import { RiInstagramLine, RiFacebookCircleLine } from 'react-icons/ri'
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -19,7 +19,7 @@ export default async function Home() {
       <div className={styles.rec7} />
       <div className={styles.section1}>
         <HiMapPin className={styles.locationDotIcon} />
-        <h3 className={styles.heading1}>Locations</h3>
+        <h3 className={styles.heading1}>locations</h3>
         <div className={styles.loc1}>
           <Image className={styles.loc1Image} alt={'SRM University'} src='/srm.jpg' width={320} height={320} />
           <div className={styles.loc1Name}>
@@ -29,31 +29,27 @@ export default async function Home() {
       </div>
       <div className={styles.section2}>
         <HiFaceSmile className={styles.faceLaughIcon} />
-        <h3 className={styles.heading2}>How izy?</h3>
+        <h3 className={styles.heading2}>how to?</h3>
         <div className={styles.howIzyPara}>
           <p className={styles.para}>
-            Just place a Service Request with us, will collect your Device as soon as we
-            can then we will take it to our repair centre and repair it with best possible
-            care. After the repair process is done we will hand the device to you.
-            That’s sooooooooo izy
+            # Search your phone...............................<br/>
+            # Select the problem & fill details.........<br/>
+            # Will tell the price, if you agree collect<br/>
+            # After repair will drop...........................
           </p>
         </div>
       </div>
       <div className={styles.section3}>
         <Image className={styles.bgPattern2} alt={'Background'} src={'/background/bgPattern2Home.svg'} width={1} height={1} />
         <HiPhone className={styles.phoneIcon} />
-        <h3 className={styles.heading3}>Contact Us</h3>
+        <h3 className={styles.heading3}>contact us</h3>
         <div className={styles.contactSection}>
             <span>
                 {'For queries regarding orders contact us via'}
                 <div className={styles.linksHolder}>
-                    <Link className={styles.linkItem} href={'tel: 8318765361'}>
+                    <Link className={styles.linkItem} href={'tel: +916381784458'}>
                         <HiOutlinePhone className={styles.linkIcon} />
-                        <label className={styles.linkName}>{process.env.phone1}</label>
-                    </Link>
-                    <Link className={styles.linkItem} href={'tel: 9120610600'}>
-                        <HiOutlinePhone className={styles.linkIcon} />
-                        <label className={styles.linkName}>{process.env.phone2}</label>
+                        <label className={styles.linkName}>{process.env.phone}</label>
                     </Link>
                     <Link className={styles.linkItem} href={'mailto: mizyindia@gmail.com'}>
                         <HiOutlineMail className={styles.linkIcon} />
@@ -64,14 +60,18 @@ export default async function Home() {
             </span>
         </div>
         <div className={styles.linksHolder}>
-            <Link className={styles.linkItem} href={process.env.instagramHandle} target={'_blank'}>
+            <Link className={styles.linkItem} href={process.env.instagramLink} target={'_blank'}>
                 <RiInstagramLine className={styles.linkIcon} />
+                <label className={styles.linkName}>mizyindia</label>
+            </Link>
+            <Link className={styles.linkItem} href={process.env.facebookLink} target={'_blank'}>
+                <RiFacebookCircleLine className={styles.linkIcon} />
                 <label className={styles.linkName}>mizyindia</label>
             </Link>
         </div>
       </div>
       <div className={styles.end}>
-        <div className={styles.endOfPage}>End of Page</div>
+        <div className={styles.endOfPage}>end of page</div>
         <div className={styles.endLine}>
           <span>
             {'Want to hear more from us visit '}
