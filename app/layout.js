@@ -4,9 +4,9 @@ import { Montserrat, Noto_Sans } from 'next/font/google'
 
 
 export const metadata = {
-    title: 'Mizy | Mobile Repairs in SRM',
-    applicationName: 'Mizy',
-    description: 'Mizy is a new in town pick and drop mobile repair service. For SRMites, By SRMites',
+    title: 'Mobile Repairs in SRM | mizy',
+    applicationName: 'mizy',
+    description: 'We are introducing a new pick and drop mobile repair service with a promise to be atmost honest to you when its about your most personal thing. For SRMites, By SRMites',
     keywords: ['mizy', 'mobile repair', 'srm', 'srm university', 'phone repair', 'mobile shop', 'mobile repair shop near me'],
     themeColor: '#ffffff',
     manifest: '/site.webmanifest',

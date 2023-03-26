@@ -28,13 +28,6 @@
 .headlineAccent {
     color: var(--primary);
 }
-.linePattern {
-    position: absolute;
-    top: 9.5rem;
-    left: 12.75rem;
-    width: 7rem;
-    height: .65rem;
-}
 .headPara {
     position: relative;
     margin-top: 2rem;
@@ -154,7 +147,6 @@
 }
 .howIzyPara {
     margin-top: 1.5rem;
-    width: 32rem;
     font-family: var(--noto);
     text-align: justify;
 }
@@ -269,43 +261,22 @@
 /**********************************************************************************/
 
 @media screen and (max-width: 480px) {
-    .linePattern {
-        top: 14.5rem;
-    }
-    .headPara {
-        display: none;
-    }
     .rec2,
     .rec4,
     .rec6 {
         width: 21vw;
     }
 }
-  
-@media screen and (max-width: 651px) {
+@media screen and (max-width: 424px) {
+    .headPara {
+        max-width: fit-content;
+    }
     .rec6 {
-        height: 32.1rem;
+        height: 33.2rem;
     }
     .rec7,
     .rec8 {
-        top: calc(var(--bghome-start) + 45.2rem);
-    }
-    .linePattern {
-        top: 14.5rem;
-    }
-    .headPara {
-        width: fit-content;
-    }
-    .howIzyPara {
-        width: fit-content;
-    }
-    .section1,
-    .section2,
-    .section3 {
-        padding: 3.5rem 0;
-    }
-    .end {
-        margin-top: 6.5rem;
+        top: calc(var(--bghome-start) + 46.3rem);
     }
 }
 @media screen and (max-width: 1024px) {

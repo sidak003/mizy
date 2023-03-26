@@ -13,15 +13,15 @@ export default function OrderSummary() {
             <Image className={styles.bgPattern1} alt={'Background'} src={'/background/bgPatternOrderSummary.svg'} width={1} height={1} />
             <div className={styles.hero}>
                 <HiGiftTop className={styles.giftIcon} />
-                <h1 className={styles.headline}>Congrats!</h1>
+                <h1 className={styles.headline}>congrats!</h1>
                 <p className={styles.headPara}>
                     You have successfully placed an order with us.<br/>
-                    Will call you within next <b>24hrs</b> on your regestered number to pick your mobile phone.<br/><br/>
-                    If you have any queries regarding your order or for cancelling your order just contact us via contacts provided on home.<br/>
-                    Happy Mizy :)
+                    Will call you within next <b>2hrs</b> on your registered number to pick your mobile phone.<br/><br/>
+                    If you have any queries regarding your order or for cancelling your order just contact us via links provided on home page.<br/>
+                    happy mizy :)
                 </p>
                 <div className={styles.end}>
-                    <div className={styles.endOfPage}>End of Page</div>
+                    <div className={styles.endOfPage}>end of page</div>
                     <div className={styles.endLine}>
                     <span>
                         {'You have reached the end of page visit '}

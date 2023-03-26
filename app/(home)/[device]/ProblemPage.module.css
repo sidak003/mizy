@@ -26,14 +26,14 @@
     width: 5.5rem;
     height: 5.5rem;
     top: 3.5rem;
-    left: 6.2vw;
+    left: calc(var(--start-point) - 3rem);
     color: var(--style);
 }
 .pencilIcon {
     width: 5rem;
     height: 5rem;
     top: 4rem;
-    left: 7.75vw;
+    left: calc(var(--start-point) - 2rem);
 }
 .headline {
     position: relative;
