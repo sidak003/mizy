@@ -22,12 +22,12 @@ export default async function ProblemPage( {params} ) {
             <div className={styles.rec1}/>
             <div className={styles.rec2}/>
             <HiExclamationTriangle className={styles.alertIcon} />
-            <h3 className={styles.headline}>Specify Your Problem</h3>
+            <h3 className={styles.headline}>specify your problem</h3>
             <div className={styles.wrapper}>
                 <PpSection ppList={ppList}/>
                 {/* <PpSection ppList={[{"ppId":2029,"problemName":"Broken Screen","price":"*"},{"ppId":1353,"problemName":"Won't Charge","price":"898"},{"ppId":2755,"problemName":"Short Battery Life","price":"*"},{"ppId":1354,"problemName":"Mic","price":"898"},{"ppId":1355,"problemName":"Speaker","price":"898"},{"ppId":1356,"problemName":"Earpiece","price":"898"},{"ppId":2030,"problemName":"Phone Dead","price":"*"}]}/> */}
                 <div className={styles.infoLine}><HiOutlineInformationCircle className={styles.icon}/>
-                    {'Price would be told before pickup for confirmation via call or any other medium'}
+                    {'Price would be informed through a confirmation phone call'}
                 </div>
             </div>
         </div>

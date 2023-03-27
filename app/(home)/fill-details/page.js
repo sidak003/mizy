@@ -21,7 +21,7 @@ export default async function FillDetailsPage() {
             <div className={styles.rec1}/>
             <div className={styles.rec2}/>
             <HiPencil className={styles.pencilIcon} />
-            <h3 className={styles.headline}>Fill Your Details</h3>
+            <h3 className={styles.headline}>fill your details</h3>
             <div className={styles.wrapper}>
                 <OrderForm points={points}/>
                 {/* <OrderForm points={[{"pointId":1,"pointName":"Clock Tower"},{"pointId":2,"pointName":"Pierre Fauchard"},{"pointId":3,"pointName":"Tech Park"},{"pointId":4,"pointName":"University Building"}]}/> */}
