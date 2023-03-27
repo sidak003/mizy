@@ -32,10 +32,10 @@ export default async function Home() {
         <h3 className={styles.heading2}>how to?</h3>
         <div className={styles.howIzyPara}>
           <p className={styles.para}>
-            # Search your phone...............................<br/>
-            # Select the problem & fill details.........<br/>
-            # Will tell the price, if you agree collect<br/>
-            # After repair will drop...........................
+            # Search your phone on mizy.in<br/>
+            # Select the problem & fill details<br/>
+            # Will tell price, if you agree collect<br/>
+            # After repair will drop your device
           </p>
         </div>
       </div>

@@ -148,7 +148,7 @@
 .howIzyPara {
     margin-top: 1.5rem;
     font-family: var(--noto);
-    text-align: justify;
+    text-align: right;
 }
 .section3 {
     position: relative;
