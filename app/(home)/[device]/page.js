@@ -25,7 +25,7 @@ export default async function ProblemPage( {params} ) {
             <h3 className={styles.headline}>specify your problem</h3>
             <div className={styles.wrapper}>
                 <PpSection ppList={ppList}/>
-                {/* <PpSection ppList={[{"ppId":2029,"problemName":"Broken Screen","price":"*"},{"ppId":1353,"problemName":"Won't Charge","price":"898"},{"ppId":2755,"problemName":"Short Battery Life","price":"*"},{"ppId":1354,"problemName":"Mic","price":"898"},{"ppId":1355,"problemName":"Speaker","price":"898"},{"ppId":1356,"problemName":"Earpiece","price":"898"},{"ppId":2030,"problemName":"Phone Dead","price":"*"}]}/> */}
+                {/* <PpSection ppList={[{"ppId":1354,"problemName":"Screen Guard","price":"98"},{"ppId":2029,"problemName":"Broken Screen","price":"i"},{"ppId":1353,"problemName":"Won't Charge","price":"898"},{"ppId":2755,"problemName":"Short Battery Life","price":"i"},{"ppId":2030,"problemName":"Phone Dead","price":"i"},{"ppId":2031,"problemName":"Don't Know / Others","price":"i"}]}/> */}
                 <div className={styles.infoLine}><HiOutlineInformationCircle className={styles.icon}/>
                     {'Price would be informed through a confirmation phone call'}
                 </div>

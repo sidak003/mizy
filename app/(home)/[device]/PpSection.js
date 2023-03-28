@@ -1,18 +1,15 @@
 'use client'
 import styles from './PpSection.module.css'
 import { useState } from 'react';
-import { HiDevicePhoneMobile, HiBoltSlash, HiMicrophone, HiSpeakerWave, HiPhone, HiCpuChip, HiChevronRight, HiOutlineInformationCircle } from 'react-icons/hi2';
-import { IoBatteryDead } from 'react-icons/io5'
+import { HiShieldCheck, HiDevicePhoneMobile, HiBolt, HiBattery50, HiCpuChip, HiChevronRight, HiOutlineInformationCircle } from 'react-icons/hi2';
 import Link from 'next/link';
 
 
 function PpIcon({ problemName }) {
-    if(problemName==="Broken Screen") return <HiDevicePhoneMobile className={styles.ppIcon} />
-    else if(problemName==="Won't Charge") return <HiBoltSlash className={styles.ppIcon} />
-    else if(problemName==="Short Battery Life") return <IoBatteryDead className={styles.ppIcon} />
-    else if(problemName==="Mic") return <HiMicrophone className={styles.ppIcon} />
-    else if(problemName==="Speaker") return <HiSpeakerWave className={styles.ppIcon} />
-    else if(problemName==="Earpiece") return <HiPhone className={styles.ppIcon} />
+    if(problemName==="Screen Guard") return <HiShieldCheck className={styles.ppIcon} />
+    else if(problemName==="Broken Screen") return <HiDevicePhoneMobile className={styles.ppIcon} />
+    else if(problemName==="Won't Charge") return <HiBolt className={styles.ppIcon} />
+    else if(problemName==="Short Battery Life") return <HiBattery50 className={styles.ppIcon} />
     else if(problemName==="Phone Dead") return <HiCpuChip className={styles.ppIcon} />
 }
 
@@ -30,7 +27,7 @@ export default function ProblemSection( {ppList} ) {
                             <PpIcon problemName={pp.problemName} />
                             <div className={styles.ppName}>{pp.problemName}</div>
                         </div>
-                        {pp.price==="*"? <HiOutlineInformationCircle className={styles.ppIcon} /> : <div className={styles.ppPrice}>₹{pp.price}</div>}
+                        {pp.price==="i"? <HiOutlineInformationCircle className={styles.ppIcon} /> : <div className={styles.ppPrice}>₹{pp.price}</div>}
                     </div>
                 )
             })}
